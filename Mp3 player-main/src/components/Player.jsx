@@ -50,9 +50,9 @@ function Player({ song }) {
     return (
         <div>
             {isPlaying ? (
-                <h2>Está tocando a música: {tracks[currentIndex]?.name}</h2>
+                <h2>Música em Andamento: {tracks[currentIndex]?.name}</h2>
             ) : (
-                <h2>A música está parada</h2>
+                <h2>Música Pausada</h2>
             )}
             <audio ref={music} src={tracks[currentIndex]?.music || "https://listen.hs.llnwd.net/g3/prvw/5/5/7/1/6/2630961755.mp3"} ></audio>
             <button onClick={ prev }>Anterior</button>
